@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/edit_name_register"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:hint="请输入账号"
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName"
+        android:textColor="#979797"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/account_image"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/input_frame" />
+
+
+
+
+    <EditText
+        android:id="@+id/edit_password_register"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/edit_name_register"
+        android:layout_alignLeft="@id/edit_name_register"
+        android:paddingLeft="10dp"
+        android:background="@drawable/input_frame"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textColor="#979797"
+        android:textSize="12sp"/>
+
+
+    <EditText
+        android:id="@+id/edit_password_confirm"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/edit_password_register"
+        android:layout_alignLeft="@id/edit_name_register"
+        android:paddingLeft="10dp"
+        android:background="@drawable/input_frame"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="再次输入密码"
+        android:inputType="textPassword"
+        android:textColor="#979797"
+        android:textSize="12sp"/>
+
+
+    <ImageView
+        android:id="@+id/account_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/img1" />
+
+
+    <ImageView
+        android:id="@+id/pass_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/account_image"
+        android:layout_alignLeft="@id/account_image"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/img2" />
+
+
+    <ImageView
+        android:id="@+id/pass_image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/pass_image"
+        android:layout_alignLeft="@id/account_image"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/img2" />
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:text="注册"
+        android:background="@color/green1"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:id="@+id/button_register_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◁登录"
+        android:textColor="#4D7FA5"
+        android:textSize="20sp"
+        android:background="@color/transparent"/>
+
+
+
+
+</RelativeLayout>

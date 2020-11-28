@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:text="登录"
+        android:textColor="#4D7FA5"
+        android:textSize="36sp"/>
+
+
+    <TextView
+        android:id="@+id/text_wel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="您好，欢迎来到知乎日报"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:hint="请输入账号"
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName"
+        android:textColor="#979797"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/account_image"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/input_frame" />
+
+
+
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/edit_name"
+        android:layout_alignLeft="@id/edit_name"
+        android:paddingLeft="10dp"
+        android:background="@drawable/input_frame"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textColor="#979797"
+        android:textSize="12sp"/>
+
+
+    <ImageView
+        android:id="@+id/account_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+       android:layout_marginTop="182dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/img1" />
+
+
+    <ImageView
+        android:id="@+id/pass_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/account_image"
+        android:layout_alignLeft="@id/account_image"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/img2" />
+
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:text="登录"
+        android:background="@color/green1"
+        android:layout_marginTop="330dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+
+    <CheckBox
+        android:id="@+id/checkBox_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同意用户协议"
+        android:textColor="#4D7FA5"
+        android:layout_alignRight="@id/edit_password"
+        android:layout_marginTop="270dp"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有账号？立即注册"
+        android:textColor="#4D7FA5"
+        android:textSize="12sp"
+        android:layout_below="@id/button_login"
+        android:background="@color/transparent"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
